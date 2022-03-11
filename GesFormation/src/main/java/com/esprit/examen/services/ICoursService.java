@@ -12,6 +12,7 @@ public interface ICoursService {
 
 	void supprimerCours(Long coursId);
 	
+	Cours getCoursById(Long coursId);
 	List<Cours> getCours();
 	
 	void affecterCoursASession(Long coursId, Long sessionId);

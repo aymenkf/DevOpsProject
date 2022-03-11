@@ -1,6 +1,7 @@
 package com.esprit.examen.services;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +12,13 @@ import com.esprit.examen.entities.Session;
 import com.esprit.examen.repositories.CoursRepository;
 import com.esprit.examen.repositories.SessionRepository;
 
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 @Service
+@Slf4j
 public class CoursService implements ICoursService {
 
 	@Autowired
@@ -46,6 +53,19 @@ public class CoursService implements ICoursService {
 	{
 		/*todo*/
         
+	}
+	
+	@Override
+	public Cours getCoursById(Long coursId)
+	{
+		Optional<Cours> c = coursRepository.findById(coursId);
+        if(c.isPresent()) {
+        	Cours cours =c.get();
+        	return cours;
+        }else {
+            log.info("Cours doesn't exist");
+            return null;
+        }
 	}
 
 }
