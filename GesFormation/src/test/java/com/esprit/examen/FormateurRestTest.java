@@ -24,35 +24,45 @@ public class FormateurRestTest {
 		log.warn("********************************Start Method Test Ajouter Formateur ******************************************************");
 		Formateur f = new Formateur();
         f.setNom("Test Nom");
+        log.warn("********************************Start Method Test Ajouter Formateur ******************************************************");
 		f.setPrenom("Test Prenom");
-		/*c.setIntitule("Test Intitule");
-		Long coursId = service.addCours(c);*/
+		
 		System.out.println("done");
-		log.trace("trace : Cours added sucessfuly !");
-		log.debug("debug : Cours added sucessfuly  ");
+		
        
-		/*if( null == service.getCoursById(coursId)) 	
-		log.error("we don't have Cours with this ID" + coursId);*/
 		
-		
-		/*assertNotNull(service.getCoursById(coursId));
-		log.info("this is one cours of  " + service.getCours().size() +" Cours");	
-		log.warn("********************************End Method Test Add Cours ******************************************************");
-		*/
 		}
 
 	@Test
 	public void testModifierFormateur() {
+		log.warn("********************************Start Method Test Modifier Formateur ******************************************************");
+		Formateur f = new Formateur();
+        f.setNom("Test Nom");
+        log.warn("********************************Start Method Test Modifier Formateur ******************************************************");
+		f.setPrenom("Test Prenom");
+		
+		System.out.println("done");
 		
 	}
 
 	@Test
 	public void testSupprimerFormateur() {
+		log.warn("********************************Start Method Test Supprimer Formateur ******************************************************");
+		Formateur f = new Formateur();
+        f.setNom("Test Nom");
+        log.warn("********************************Start Method Test Supprimer Formateur ******************************************************");
+		f.setPrenom("Test Prenom");
+		
+		System.out.println("done");
 	
 	}
 
 	@Test
 	public void testNombreFormateursImpliquesDansUnCours() {
+		log.warn("********************************Start Method Test Nombre Formateur Impliques dans cours ******************************************************");
+		
+		
+		System.out.println("done");
 		
 	}
 
