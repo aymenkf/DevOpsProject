@@ -36,11 +36,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
-	<dependency>
-			<groupId>com.vermeg.examen</groupId>
-			<artifactId>spring-boot-data-jpa-entity</artifactId>
-			<version>0.0.1-RELEASE</version>
-		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -101,11 +96,7 @@
 		</dependency>
 		<!-- JSF -->
 
-		<dependency>
-			<groupId>com.vermeg.examen</groupId>
-			<artifactId>spring-boot-data-jpa-entity</artifactId>
-			<version>0.0.1-RELEASE</version>
-		</dependency>
+		
 	</dependencies>
 
 
